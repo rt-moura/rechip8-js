@@ -1,0 +1,44 @@
+#hexdSec
+{
+    grid-area: hex;
+    display: flex;
+    overflow: auto;
+    height: 300px;
+}
+
+#hexdSec article
+{
+    width: 100%;
+}
+
+#hexdTable
+{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#hexdTable tr
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+}
+
+#hexdTable tr td:nth-of-type(1)
+{
+    width: 15%;
+
+}
+
+#hexdTable tr td:nth-of-type(2)
+{
+    color: var(--blue1);
+    text-align: left;
+    width: 55%;
+}
+#hexdTable tr td:nth-of-type(3)
+{
+    text-align: right;
+    width: 30%;
+}

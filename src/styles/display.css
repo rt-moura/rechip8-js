@@ -1,0 +1,157 @@
+#displaySec
+{
+    display: flex;
+    grid-area: display;
+    height: 465px;
+}
+
+#canvas_container
+{
+    display: inline-block;
+    position: relative;
+    margin: -10px 0 -10px -10px;
+    width: 100%;
+}
+
+#hCanvasGrid
+{
+    position: absolute;
+    width: calc(100% + 18px);
+    height: 18px;
+    top: -18px;
+    left: -18px;
+    padding-left: 18px;
+    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 0 0;
+    background-color: var(--blue2);
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    visibility: hidden;
+    
+}
+
+#hCanvasGrid table
+{
+    width: 100%;
+    height: 100%;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+#hCanvasGrid table tbody tr td
+{
+    width: 1.58%;
+}
+
+#vCanvasGrid
+{
+    position: absolute;
+    height: 100%;
+    width: 18px;
+    left: -18px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 0 10px;
+    background-color: var(--blue2);
+    text-align: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    visibility: hidden;
+}
+
+#vCanvasGrid table
+{
+    height: 100%;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+#vCanvasGrid table tr
+{
+    line-height: 1;
+}
+
+#displaySec aside
+{
+    padding-left: var(--default-padding);
+    width: 15%;
+}
+
+#displaySec aside > label
+{
+    display: block;
+    margin-top: var(--default-padding);
+}
+
+#displaySec aside > select, #displaySec aside > input
+{
+    display: block;
+    padding: 4px;
+    border: 1px solid var(--text-color1);
+    border-radius: 5px;
+    background-color: var(--blue2);
+    width: 100%;
+}
+
+#gameTips
+{
+    margin-bottom: 5px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    height: 16%;
+}
+
+
+#startButton
+{
+    display: block;
+    margin: 10px auto;
+    padding: 5px 20px;
+    border: 1px solid var(--section-bg-color);
+    border-radius: 5px;
+    font-weight: 600; font-size: 12px; letter-spacing: 1.25px;
+    background-color: var(--blue1);
+    color: var(--section-bg-color);
+    width: 100%;
+}
+
+#startButton:hover
+{
+    border: 1px solid var(--text-color1);
+    background-color: var(--text-color3);
+    color: var(--text-color1);
+}
+
+#startButton:active
+{
+    border: 1px solid var(--text-color3);
+    box-shadow: 0 2px 4px 2px var(--text-color3);
+    background-color: var(--text-color1);
+    color: var(--section-bg-color);
+}
+
+#debugContainer label
+{
+    display: inline-block;
+    width: auto;
+}
+
+#nextButton
+{
+    display: none;
+    margin-top: 5px;
+    padding: 2px;
+    width: 100%;
+}
+
+#displaySec aside .hLine
+{
+    margin-bottom: var(--default-padding);
+}

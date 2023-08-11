@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+h5
+{
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.sub1
+{
+    font-size: 14px;
+    letter-spacing: 0.15px;
+}
+
+:root
+{
+    --page-bg-color: #E5E7EB;
+    --section-bg-color: #F9FAFB;
+    --bg-color2: #9CA3AF;
+    --blue1: #2563EB;
+    --blue2: #BFDBFE;
+    --text-color1: #111827;
+    --text-color3: #09A0A0;
+    --default-padding: 10px;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--page-bg-color);
+}
+
+#root
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main
+{
+    display: grid;
+    grid-template: "display display asm"
+                   "hex hex asm";
+    grid-gap: 10px;
+    margin: 50px 0;
+    width: 1500px;
+}
+
+section
+{
+    padding: var(--default-padding);
+    border-radius: 10px;
+    box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--section-bg-color);
+}
+
+.vLine
+{
+    display: inline-block;
+    width: 1px;
+    height: auto;
+    margin: calc(0px - var(--default-padding)) 0;
+    background-color: var(--bg-color2);
+}
+
+.hLine
+{
+    width: auto;
+    height: 1px;
+    margin: 0 calc(0px - var(--default-padding));
+    background-color: var(--bg-color2);
+}
+
+footer
+{
+    padding: 15px;
+    background-color: rgba(156, 163, 175, 0.4);
+    text-align: center;
+    width: 100%;
+}
